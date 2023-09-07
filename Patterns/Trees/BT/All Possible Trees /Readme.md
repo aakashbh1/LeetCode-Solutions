@@ -4,10 +4,11 @@
  Patter I am taking about in the solve function
  
   
- for(int i = 1; i < n; i+=2){
- 
-     vector<TreeNode*>left = solve(i); // left subtrees trees 
-     vector<TreeNode*>right = solve(n - i - 1);    // right subtrees    
+ {
+
+    for(int i = 1; i < n; i+=2){
+      vector<TreeNode*>left = solve(i); // left subtrees trees 
+      vector<TreeNode*>right = solve(n - i - 1);    // right subtrees    
             for( TreeNode*l: left) // iterating to all possibilities
             {
                 for(TreeNode*r : right)
@@ -21,3 +22,4 @@
         }
           
         
+}
