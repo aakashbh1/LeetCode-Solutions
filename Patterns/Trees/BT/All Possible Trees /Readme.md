@@ -1,7 +1,7 @@
  This type of questions require to get all possible binary tree or binary search tree or any other type of tree.
  This uses Dynamic Programming as its base and it also have a template
 
- Patter I am taking about in the solve function
+ Patter I am talking about in the solve function
  
   
  {
