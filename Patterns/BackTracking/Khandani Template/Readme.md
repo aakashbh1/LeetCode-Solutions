@@ -1,10 +1,10 @@
  Isme simple hai 2 tarike hai with and without for loop dono backtrack ke hi templates hai.
 
 Template 1 :
-// ek Element lo
-// explore karo (matlab function call karo next)
-// Element hata do jisme daala tha
-// Ab explore karo uss element ko bina liye 
+// ek Element lo  
+// explore karo (matlab function call karo next)  
+// Element hata do jisme daala tha  
+// Ab explore karo uss element ko bina liye  
 
 Code:
    
@@ -17,10 +17,10 @@ Code:
 
 Template 2 : Using For Loops 
 
-// For loop initiation
-// ek element daalo 
-// explore karo next
-// element nikalo 
+// For loop initiation  
+// ek element daalo   
+// explore karo next  
+// element nikalo   
 
 
 Code:
