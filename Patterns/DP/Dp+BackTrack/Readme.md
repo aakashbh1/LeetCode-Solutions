@@ -1,0 +1,3 @@
+Iss type ke questions mei normally take not take ka ki funda chalta hai bas isme hume all possible cases return karne padte hai toh Dp and backtrack mix lagta hai.
+Iska bhi template code fix hi hai ek jaisa hi hai...
+agar mujhe mila toh mei pakke se add kar dunga 
