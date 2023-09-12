@@ -1,0 +1,36 @@
+55. Jump Game
+class Solution {
+private:
+    bool can_i_reach(int ind, int n, vector<int>& nums){
+        if(ind >= n - 1) return true;
+        if(nums[ind] == 0) return false;
+
+        for(int i = 1; i <= nums[ind]; i++){
+            if(can_i_reach(ind + i, n, nums) == true) return true;
+        }
+        return false;
+    }
+//      =====================================================================
+    bool tabulation(int n, vector<int>& nums){
+        vector<bool> dp(n, false);
+        // Base case
+        dp[n - 1] = true;
+
+        for (int ind = n - 2; ind >= 0; ind--) {
+            for (int j = 1; j <= nums[ind]; j++) {
+                if (ind + j < n && dp[ind + j]) {
+                    dp[ind] = true;
+                    break;
+                }
+            }
+        }
+        return dp[0];
+    }
+public:
+    bool canJump(vector<int>& nums) {
+        int n = nums.size();
+        if (n == 1) return true;
+        // return can_i_reach(0, n, nums);
+        return tabulation(n, nums);
+    }
+};
