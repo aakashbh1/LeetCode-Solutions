@@ -69,16 +69,16 @@ Code Example:
       }
 
 
-   4. Space Optimization: so in bottom up we saw dp vector was used but in recusrive calls only last 2 or 3 states were required to get the
-                          current value then why to keep track of whole dp so space optimization reduces the dp array which memoization started firstly    
-                         Appraoch: ->initialise curr and prev1 and prev2 or more according to situation 
-                                   ->change the dp indexes base cases to values of prev1,prev2... accordingly 
-                                   -> run a for loop opposite to what you did in top down    
-                                   -> change the fucntion calls to curr=prev1+prev2  or something as no fucntion calls are made just a for loop is there
-                                   -> Now before exiting loop change the variable values to upadeted ones so that next iteration can use them freshly
+   4. Space Optimization: so in bottom up we saw dp vector was used but in recusrive calls only last 2 or 3 states were required to get the  
+                          current value then why to keep track of whole dp so space optimization reduces the dp array which memoization started firstly      
+                         Appraoch: ->initialise curr and prev1 and prev2 or more according to situation   
+                                   ->change the dp indexes base cases to values of prev1,prev2... accordingly   
+                                   -> run a for loop opposite to what you did in top down      
+                                   -> change the fucntion calls to curr=prev1+prev2  or something as no fucntion calls are made just a for loop is there  
+                                   -> Now before exiting loop change the variable values to upadeted ones so that next iteration can use them freshly  
 
     
-   Code Example:
+   Code Example:  
 
        int climbStairs(int n) {
         // from base case
