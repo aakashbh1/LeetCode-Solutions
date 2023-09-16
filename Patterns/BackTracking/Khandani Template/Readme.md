@@ -12,7 +12,15 @@ Code:
         solve(i,arr,ans,temp,t-arr[i]);           // explore karo (matlab function call karo next)                                                    
         temp.pop_back();                          // backtracking // Element hata do jisme daala tha
         solve(i+1,arr,ans,temp,t);                // nottake // Ab explore karo uss element ko bina liye 
+        
         //iss case mei uss element ko wapas le sakte hai but har baar aisa nhi hoga
+
+        or*****$$$$$$
+        // pehle exclude kar lo simple sa
+        solve(i+1,arr,ans,temp,t);
+        // ab include kar do
+        temp.push_back(arr[i]);
+        solve(i+1,arr,ans,temp,t);
 
 
 Template 2 : Using For Loops 
