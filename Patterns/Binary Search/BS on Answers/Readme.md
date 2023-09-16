@@ -25,3 +25,14 @@ Psuedo Code:
     else low=mid+1; // as mid was not the answer so move low 
      }
      return ans;
+one more way to code:
+
+    while(low<high){ not equals to 
+          int mid =low+(high-low)/2;
+          if(check(mid)==true){
+          ans=mid; // this could be the answer
+          high=mid; // more smaller answer can be possible if mid was possible
+          }
+        
+        else low=mid+1; // as mid was not the answer so move low 
+         }
