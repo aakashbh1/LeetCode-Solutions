@@ -6,7 +6,7 @@ perform operation which is required for the given question
 
 Pseudo Code :
 
-
+          // Left Right Node (PostOrder) 
           if(root==NULL) return 0/ return;  
           int left = fun(root->left, other parameters if any) // value from left subtree  
           int right= fun(root->right, other parameters if any) // value from right subtree   
