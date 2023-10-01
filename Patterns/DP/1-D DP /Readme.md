@@ -21,7 +21,7 @@ Code Example:
                 return 0;
             return solve(n, i+1) + solve(n, i+2); // recursive relation and return whatever asked  
            }   
-
+          // kabhi kabhi agar har index pe bhi multiple options hue toh hume usse forloop mei daalke saari possibilties dekhni hogi
 2. Memoization(Top-Down): This will have a dp vector initialised with -1, this will store previously calculated results.  
                          Appraoch: ->initialse a vector of size and value=-1  
                                    ->pass as an arguments wherever function call are made  
