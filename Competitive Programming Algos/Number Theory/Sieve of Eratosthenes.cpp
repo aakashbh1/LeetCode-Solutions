@@ -1,3 +1,6 @@
+
+Time: O(nlog(logn))
+Space: O(n)
 vector<int> sieveOfEratosthenes(int n) {
     vector<bool> isPrime(n+1, true);
     isPrime[0] = isPrime[1] = false;
