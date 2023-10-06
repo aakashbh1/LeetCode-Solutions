@@ -23,6 +23,7 @@ long long binaryExponentiation(long long a, long long b) {
     while (b > 0) {
         if (b % 2 == 1) {
             result = result * a;
+            b--;
         }
         a = a * a;
         b /= 2;
