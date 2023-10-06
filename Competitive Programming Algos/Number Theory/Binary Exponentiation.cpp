@@ -15,8 +15,10 @@ long long binpow(long long a, long long b) {
 long long binpow(long long a, long long b) {
     long long res = 1;
     while (b > 0) {
-        if (b & 1)//power is odd 
-            res = res * a;// simple multiply it is odd 
+        if (b & 1){ //power is odd  
+            res = res * a; // simple multiply it is odd 
+            b--; //reduce power
+        }    
         else { // else if power is even 
           a = a * a; // 2 becomes 4 and power divides by half
         b >>= 1; // it means lets say we had 2^8 now a*a makes it 4 and b>>=1 makes b=2 which is equal to 4^2
